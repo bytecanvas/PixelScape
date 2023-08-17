@@ -1,6 +1,6 @@
 # PixelScape 🎨🖼️
 
-Welcome to PixelScape, where Boredom Meets Beauty! 🌟🔥
+👋 Welcome to PixelScape, where Boredom Meets Beauty! 🌟🔥
 
 Are you tired of the same old, mundane wallpapers? Ready to infuse some artistic flair into your digital life? Look no further! PixelScape is your gateway to a pixelated paradise, where each wallpaper is a masterpiece waiting to grace your screens.
 
@@ -26,7 +26,7 @@ Are you tired of the same old, mundane wallpapers? Ready to infuse some artistic
 
 PixelScape is all about creativity, and we welcome contributions from the community:
 
-- **Add Your Magic:** Have pixel art that deserves a place in PixelScape? Feel free to create a pull request and share your creations!
+- **Add Your Magic:** Have pixel art that deserves a place in PixelScape? Feel free to create a pull request and share your creations! Simply fork this repository, make a directory relevant to the collection of your wallpapers, and let the neon glaze thank us! ✨🎉
 
 - **Improvements:** Found a way to make the repository even better? Share your ideas by opening an issue.
 
