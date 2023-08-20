@@ -77,4 +77,4 @@ Replace `/path/to/change_wallpaper.py` with the actual path to your Python scrip
 Now, the Python script will run at the specified interval and change the wallpaper using the `feh` command-line tool.
 ```
 
-Copy and paste the above Markdown code into your preferred Markdown editor or viewer, and it will provide you with a nicely formatted guide for setting up the automatic wallpaper changer on your Linux system. Just make sure to replace `/path/to/PixelScape` and `/path/to/change_wallpaper.py` with the actual paths on your system.
+Just make sure to replace `/path/to/PixelScape` and `/path/to/change_wallpaper.py` with the actual paths on your system.
