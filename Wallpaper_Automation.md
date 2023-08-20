@@ -1,7 +1,6 @@
-Certainly! Here's the full set of instructions in Markdown format for easy copy and paste:
-
-```markdown
-# Automatic Wallpaper Changer for Linux
+<p align="center">
+  <h1>🖼️ Automatic Wallpaper Changer for Linux 🐧</h1>
+</p>
 
 This guide will help you set up an automatic wallpaper changer for your Linux system using the `feh` command-line tool and a Python script.
 
