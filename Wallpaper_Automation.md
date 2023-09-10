@@ -75,7 +75,9 @@ crontab -e
 2. Add a new line at the end of the file to run the script at a specific interval. For example, to run the script every 30 minutes:
 
 ```
-*/30 * * * * /path/to/change_wallpaper.py
+
+*/30 * * * * /path/to/your/wallpaper_changer.py >> /path/to/your/logfile.log 2>&1
+
 ```
 
 Replace `/path/to/change_wallpaper.py` with the actual path to your Python script.
