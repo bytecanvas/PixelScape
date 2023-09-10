@@ -25,13 +25,15 @@ git clone https://github.com/bytecanvas/PixelScape.git
 Create a Python script named `change_wallpaper.py` with the following content:
 
 ```python
+
+#!/usr/bin/env python3
 import subprocess
 import time
 import random
 import os
 
 def change_wallpaper(wallpaper_folder):
-    wallpaper_files = [f for f in os.listdir(wallpaper_folder) if f.endswith(('.jpg', '.png', '.bmp'))]
+    wallpaper_files = [f for f in os.listdir(wallpaper_folder) if f.lower().endswith(('.jpg', '.png', '.bmp'))]
 
     if wallpaper_files:
         random_wallpaper = os.path.join(wallpaper_folder, random.choice(wallpaper_files))
