@@ -55,6 +55,40 @@ if __name__ == "__main__":
 
 ```
 
+## Using `xfconf-query` 
+```python
+
+#!/usr/bin/env python3
+import subprocess
+import time
+import random
+import os
+
+# Set the DISPLAY environment variable to specify the X server display (usually :0.0).
+os.environ['DISPLAY'] = ':0.0'
+
+def change_wallpaper(wallpaper_folder):
+    wallpaper_files = [f for f in os.listdir(wallpaper_folder) if f.endswith(('.jpg', '.png', '.bmp'))]
+
+    if wallpaper_files:
+        random_wallpaper = os.path.join(wallpaper_folder, random.choice(wallpaper_files))
+        try:
+            subprocess.run(["xfconf-query", "--channel", "xfce4-desktop", "--property", "/backdrop/screen0/monitor0/image-path", "--set", random_wallpaper])
+        except Exception as e:
+            print(f"Error changing wallpaper: {e}")
+
+def main():
+    wallpaper_folder = "/home/kernelslinger/Pictures/"  # Change this to your wallpaper folder path
+    interval_minutes = 30  # Change this to the desired interval in minutes
+
+    while True:
+        change_wallpaper(wallpaper_folder)
+        time.sleep(interval_minutes * 60)  # Convert minutes to seconds
+
+if __name__ == "__main__":
+    main()
+```
+
 Replace `/path/to/PixelScape` with the actual path to the cloned repository directory.
 
 ## Step 4: Make the Script Executable
